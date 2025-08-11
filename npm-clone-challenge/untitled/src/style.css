@@ -1,0 +1,181 @@
+/* 1) Importar fuentes */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+/* 2) Variables globales */
+:root {
+  --color-blue: rgb(67, 163, 230);
+  --color-dark-blue: rgb(25, 33, 41);
+  --color-text: rgb(0, 0, 0);
+}
+
+/* 3) Reset de márgenes y padding */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 4) Tipografía global */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  line-height: 3.5em;
+  font-weight: 300;
+}
+
+/* 5) Encabezados en Roboto Condensed */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* 6) Tamaños y estilos de headings */
+h1 {
+  font-size: 9em;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 4em;
+}
+h3 {
+  font-size: 4.2em;
+  text-align: center;
+  line-height: 1em;
+}
+h4 {
+  font-size: 1.5em;
+  letter-spacing: 0.4px;
+  line-height: 1em;
+}
+h5 {
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
+/* 7) Nav bar */
+.nav-bar {
+  background-color: var(--color-dark-blue);
+}
+.nav-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: bold;
+}
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
+/* 8) Header */
+.header {
+  background-image: url('https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.header h2 {
+  text-shadow: #020819 8px -20px 9px;
+}
+.quote {
+  font-size: 2.5em;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 1em;
+}
+
+/* 9) General information */
+.dark-background {
+  background-color: var(--color-dark-blue);
+  color: white;
+  padding: 2em;
+}
+.dark-background .section-text {
+  font-size: 2em;
+  font-weight: 100;
+  text-align: center;
+  margin: 1em 0;
+}
+.link-btn {
+  display: inline-block;
+  background-color: var(--color-blue);
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+  border-radius: 4px;
+}
+
+/* 10) Structure section */
+.service-box {
+  font-size: 1.7em;
+  text-align: center;
+  margin: 1em;
+}
+.service-box img {
+  width: 125px;
+  display: block;
+  margin: 0 auto 0.5em;
+}
+
+/* 11) Team section */
+#team .section-text {
+  font-size: 1.9em;
+  text-align: center;
+  margin: 0.5em 0;
+}
+#team .member-name {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+#team img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1em;
+}
+
+/* 12) Footer */
+.footer {
+  text-align: center;
+  font-size: 1.9em;
+}
+.address {
+  font-style: normal;
+  font-size: 0.8em;
+  margin: 0.5em 0;
+}
+.footer a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+.footer .social-list {
+  list-style: none;
+  margin: 0.5em 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
